@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />         
+</head>
+
+<body class="font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-4 fixed w-full top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Imat <span>Abu</span> Kamal</h1>
+      <button id="menu-toggle" class="lg:hidden block">
+        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <aside id="sidebar" class="bg-gray-800 text-white w-60 space-y-6 py-20 px-2 fixed inset-y-0 left-0 lg:translate-x-0 transform -translate-x-full transition-transform duration-200 ease-in-out z-20">
+    <nav>
+      <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="home">
+        <span class="material-symbols-outlined mr-2">home</span>
+        Home
+      </a>
+      <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="about">
+        <span class="material-symbols-outlined mr-2">info</span>
+        About
+      </a>
+      <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="gallery">
+        <span class="material-symbols-outlined mr-2">photo_library</span>
+        Gallery
+      </a>
+      <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="projects">
+        <span class="material-symbols-outlined mr-2">work</span>
+        Projects
+      </a>
+      <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="contact">
+        <span class="material-symbols-outlined mr-2">contact_mail</span>
+        Contact
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Content -->
+  <main id="content" class="lg:ml-64 pt-20 pb-20 ml-0 md:ml-0 p-4">
+
+    <div class="marquee">
+      <span>Selamat datang di Website resmi kami, "bijaklah dalam mencerna informasi dan menggunakan teknologi".</span>
+    </div>
+
+    <section id="home" class="visible">
+      <div id="carousel" class="relative overflow-hidden">
+        <!-- Carousel Items -->
+        <div class="carousel-item bg-cover bg-center visible" style="background-image: url('https://images.unsplash.com/photo-1593720213681-e9a8778330a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NDY1MTR8&ixlib=rb-4.0.3&q=85');">
+          <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full">
+            <h3 class="text-xl font-semibold">Web Development</h3>
+          </div>
+        </div>
+        <div class="carousel-item bg-cover bg-center hidden" style="background-image: url('https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTE0ODF8&ixlib=rb-4.0.3&q=85');">
+          <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full">
+            <h3 class="text-xl font-semibold">Web Programming</h3>
+          </div>
+        </div>
+        <div class="carousel-item bg-cover bg-center hidden" style="background-image: url('https://images.unsplash.com/photo-1521931961826-fe48677230a5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTE4MDJ8&ixlib=rb-4.0.3&q=85');">
+          <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full">
+            <h3 class="text-xl font-semibold">Android Studio</h3>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button id="prev" class="absolute top-1/2 transform -translate-y-1/2 left-2 bg-gray-800 text-white p-2 rounded-full">
+          &lt;
+        </button>
+        <button id="next" class="absolute top-1/2 transform -translate-y-1/2 right-2 bg-gray-800 text-white p-2 rounded-full">
+          &gt;
+        </button>
+      </div>
+    </section>
+
+    <section id="about" class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">About</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="about-card bg-white p-4 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Visi</h3>
+          <p>Menjadi yang terbaik dalam bidang teknologi informasi.</p>
+        </div>
+        <div class="about-card bg-white p-4 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Misi</h3>
+          <p>Menyediakan solusi teknologi yang inovatif dan berkelanjutan.</p>
+        </div>
+        <div class="about-card bg-white p-4 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Tujuan</h3>
+          <p>Mencapai kepuasan pelanggan melalui layanan berkualitas tinggi.</p>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" class="hidden mb-8">
+      <h2 class="text-2xl font-bold mb-4">Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="cards bg-white p-4 rounded-lg shadow-md">
+          <img class="w-full h-48 object-contain mb-4 rounded-lg" src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTMwOTh8&ixlib=rb-4.0.3&q=85" alt="Gallery Image 1">
+          <h3 class="text-xl font-semibold mb-2">Image 1</h3>
+          <p>Deskripsi gambar 1.</p>
+        </div>
+        <div class="cards bg-white p-4 rounded-lg shadow-md">
+          <img class="w-full h-48 object-contain mb-4 rounded-lg" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTMzMDN8&ixlib=rb-4.0.3&q=85" alt="Gallery Image 2">
+          <h3 class="text-xl font-semibold mb-2">Image 2</h3>
+          <p>Deskripsi gambar 2.</p>
+        </div>
+        <div class="cards bg-white p-4 rounded-lg shadow-md">
+          <img class="w-full h-48 object-contain mb-4 rounded-lg" src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTMzMDN8&ixlib=rb-4.0.3&q=85" alt="Gallery Image 3">
+          <h3 class="text-xl font-semibold mb-2">Image 3</h3>
+          <p>Deskripsi gambar 3.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Project Cards -->
+        <div class="card bg-white p-4 rounded-lg shadow-md">
+          <img class="w-full h-48 object-contain mb-4 rounded-lg" src="https://images.unsplash.com/photo-1531030874896-fdef6826f2f7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTM4Njh8&ixlib=rb-4.0.3&q=85" alt="Project 1">
+          <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+          <p>Email: project1@example.com</p>
+          <button class="detail-btn bg-blue-500 text-white px-4 py-2 rounded-lg mt-2" data-id="1">Detail</button>
+        </div>
+
+        <div class="card bg-white p-4 rounded-lg shadow-md">
+          <img class="w-full h-48 object-contain mb-4 rounded-lg" src="https://images.unsplash.com/photo-1605379399642-870262d3d051?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTM4Njh8&ixlib=rb-4.0.3&q=85" alt="Project 2">
+          <h3 class="text-xl font-semibold mb-2">Web Programming</h3>
+          <p>Email: projects2@example.com</p>
+          <button class="detail-btn bg-blue-500 text-white px-4 py-2 rounded-lg mt-2" data-id="2">Detail</button>
+        </div>
+        <div class="card bg-white p-4 rounded-lg shadow-md">
+          <img class="w-full h-48 object-contain mb-4 rounded-lg" src="https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTQwNTB8&ixlib=rb-4.0.3&q=85" alt="Project 3">
+          <h3 class="text-xl font-semibold mb-2">Android Studio</h3>
+          <p>Email: project3@example.com</p>
+          <button class="detail-btn bg-blue-500 text-white px-4 py-2 rounded-lg mt-2" data-id="3">Detail</button>
+        </div>
+
+      </div>
+      <div id="form-container" class="hidden bg-white p-4 rounded-lg shadow-md">
+        <img id="detail-image" class="w-full h-32 object-cover mb-4 rounded-lg" src="" alt="Detail Image">
+        <h3 id="detail-name" class="text-xl font-semibold mb-2">Nama:</h3>
+        <p id="detail-email">Email:</p>
+        <p id="detail-job">Pekerjaan:</p>
+        <p id="detail-skills">Keahlian:</p>
+        <button id="back-btn" class="bg-red-500 text-white px-4 py-2 rounded-lg mt-2">Kembali</button>
+      </div>
+
+    </section>
+    <section id="contact" class="hidden">
+      <h2 class="text-2xl font-bold mb-4">Contact</h2>
+      <div class="flex flex-col lg:flex-row lg:space-x-8">
+        <div class="map w-full lg:w-1/2 h-96 bg-gray-200 mb-4 lg:mb-0">
+          <p class="text-center pt-24">Map Placeholder</p>
+        </div>
+        <form id="myForm" enctype="multipart/form-data" class="w-full lg:w-1/2 bg-white p-4 rounded-lg shadow-md space-y-4">
+          <!-- Form Fields -->
+
+          <div>
+            <label for="name" class="block text-gray-700">Nama:</label>
+            <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-lg p-2">
+          </div>
+
+          <div>
+            <label for="email" class="block text-gray-700">Email:</label>
+            <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-lg p-2">
+          </div>
+
+          <div>
+            <label for="phone" class="block text-gray-700">Telepon:</label>
+            <input type="text" name="phone" id="phone" class="w-full border border-gray-300 rounded-lg p-2" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="12" minlength="10" required>
+          </div>
+
+          <div>
+            <label for="address" class="block text-gray-700">Alamat:</label>
+            <textarea id="address" name="address" class="w-full border border-gray-300 rounded-lg p-2"></textarea>
+          </div>
+          <div>
+            <label for="message" class="block text-gray-700">Pesan:</label>
+            <textarea id="message" name="message" class="w-full border border-gray-300 rounded-lg p-2"></textarea>
+          </div>
+          <div>
+            <label for="photo" class="block text-sm font-medium">Upload Photo</label>
+            <input type="file" id="photo" name="photo" accept="image/jpeg,image/png" capture="user" class="mt-1 block w-full" required>
+          </div>
+          <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg">Kirim</button>
+          <div id="form-notification" class="mt-4"></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-4 text-center fixed w-full bottom-0 z-50">
+    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxn3xRs4UHw5CWdhM8aEP63d339LOvIrvXILetGSy2nAAe-E3RHMaNmBWMUJNX4bl6d/exec';
+    const form = document.forms['myForm'];
+    const resultElement = document.getElementById('result');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const formData = new FormData(form);
+      fetch(scriptURL, {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => response.json())
+        .then(result => {
+          if (result.status === 'sukses') {
+            form.reset();
+          }
+          resultElement.textContent = result.pesan;
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+  </script>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
+
+
