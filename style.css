@@ -1,5 +1,22 @@
-/* Add styles here */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap');
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap");
 
 img {
   object-fit: cover; /* Menjaga proporsi gambar */
@@ -53,5 +70,3 @@ img {
     transform: translateX(-100%);
   }
 }
-
-
