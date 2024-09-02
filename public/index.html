@@ -2,322 +2,321 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-  <link rel="stylesheet" href="./public/css/output.css">
-  <style>
-    .hidden {
-      display: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../public/css/output.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 
 <body class="font-sans">
 
-  <!-- Header -->
-  <header class="bg-blue-600 text-white p-4 fixed w-full top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">Imat <span>Abu</span> Kamal</h1>
-      <button id="menu-toggle" class="lg:hidden block">
-        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
-    </div>
-  </header>
-
-  <!-- Sidebar -->
-  <aside id="sidebar" class="bg-gray-800 text-white w-60 space-y-6 py-20 px-2 fixed inset-y-0 left-0 lg:translate-x-0 transform -translate-x-full transition-transform duration-200 ease-in-out z-20">
-    <nav>
-      <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="home">
-        <span class="material-symbols-outlined mr-2">home</span>
-        Home
-      </a>
-      <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="about">
-        <span class="material-symbols-outlined mr-2">info</span>
-        About
-      </a>
-      <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="gallery">
-        <span class="material-symbols-outlined mr-2">photo_library</span>
-        Gallery
-      </a>
-      <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="projects">
-        <span class="material-symbols-outlined mr-2">work</span>
-        Projects
-      </a>
-      <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="contact">
-        <span class="material-symbols-outlined mr-2">contact_mail</span>
-        Contact
-      </a>
-      <!-- Kursus Menu -->
-      <div class="group">
-        <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
-          <span class="material-symbols-outlined mr-2">school</span>
-          Kursus
-          <span class="ml-auto transform transition-transform duration-200 group-hover:rotate-90">▼</span>
-        </a>
-        <div class="hidden group-hover:block ml-8 space-y-2 mt-2">
-          <a href="#" class="block py-2 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="computer-course-link">Komputer</a>
-          <a href="#" class="block py-2 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="web-course-link">Web Programming</a>
-          <a href="#" class="block py-2 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="android-course-link">Android Studio</a>
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4 fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Imat <span>Abu</span> Kamal</h1>
+            <button id="menu-toggle" class="lg:hidden block">
+                <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
         </div>
-      </div>
-    </nav>
-  </aside>
+    </header>
 
-  <!-- Content -->
-  <main id="content" class="lg:ml-64 pt-20 pb-20 ml-0 md:ml-0 p-4">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="bg-gray-800 text-white w-60 space-y-6 py-20 px-2 fixed inset-y-0 left-0 lg:translate-x-0 transform -translate-x-full transition-transform duration-200 ease-in-out z-20">
+        <nav>
+            <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="home">
+                <span class="material-symbols-outlined mr-2">home</span>
+                Home
+            </a>
+            <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="about">
+                <span class="material-symbols-outlined mr-2">info</span>
+                About
+            </a>
+            <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="gallery">
+                <span class="material-symbols-outlined mr-2">photo_library</span>
+                Gallery
+            </a>
+            <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="projects">
+                <span class="material-symbols-outlined mr-2">work</span>
+                Projects
+            </a>
+            <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="contact">
+                <span class="material-symbols-outlined mr-2">contact_mail</span>
+                Contact
+            </a>
+            <!-- Kursus Menu -->
+            <div class="group">
+                <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <span class="material-symbols-outlined mr-2">school</span>
+                    Kursus
+                    <span class="ml-auto transform transition-transform duration-200 group-hover:rotate-90">▼</span>
+                </a>
+                <div class="hidden group-hover:block ml-8 space-y-2 mt-2">
+                    <a href="#" class="block py-2 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="computer-course-link">Komputer</a>
+                    <a href="#" class="block py-2 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="web-course-link">Web Programming</a>
+                    <a href="#" class="block py-2 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="android-course-link">Android Studio</a>
+                </div>
+            </div>
+        </nav>
+    </aside>
 
-    <div class="marquee">
-      <span>Selamat datang di Website resmi kami, "bijaklah dalam mencerna informasi dan menggunakan teknologi".</span>
-    </div>
+    <!-- Content -->
+    <main id="content" class="lg:ml-64 pt-20 pb-20 ml-0 md:ml-0 p-4">
 
-    <section id="home" class="visible">
-      <div id="carousel" class="relative overflow-hidden">
-        <!-- Carousel Items -->
-        <div class="carousel-item bg-cover bg-center visible" style="background-image: url('https://images.unsplash.com/photo-1593720213681-e9a8778330a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NDY1MTR8&ixlib=rb-4.0.3&q=85');">
-          <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full">
-            <h3 class="text-xl font-semibold">Web Development</h3>
-          </div>
-        </div>
-        <div class="carousel-item bg-cover bg-center hidden" style="background-image: url('https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTE0ODF8&ixlib=rb-4.0.3&q=85');">
-          <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full">
-            <h3 class="text-xl font-semibold">Web Programming</h3>
-          </div>
-        </div>
-        <div class="carousel-item bg-cover bg-center hidden" style="background-image: url('https://images.unsplash.com/photo-1521931961826-fe48677230a5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTE4MDJ8&ixlib=rb-4.0.3&q=85');">
-          <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full">
-            <h3 class="text-xl font-semibold">Android Studio</h3>
-          </div>
+        <div class="marquee">
+            <span>Selamat datang di Website resmi kami, "bijaklah dalam mencerna informasi dan menggunakan teknologi".</span>
         </div>
 
-        <!-- Carousel Controls -->
-        <button id="prev" class="absolute top-1/2 transform -translate-y-1/2 left-2 bg-gray-800 text-white p-2 rounded-full">
-          &lt;
-        </button>
-        <button id="next" class="absolute top-1/2 transform -translate-y-1/2 right-2 bg-gray-800 text-white p-2 rounded-full">
-          &gt;
-        </button>
-      </div>
-    </section>
+        <section id="home" class="visible">
+            <div id="carousel" class="relative overflow-hidden">
+                <!-- Carousel Items -->
+                <div class="carousel-item bg-cover bg-center visible" style="background-image: url('https://images.unsplash.com/photo-1593720213681-e9a8778330a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NDY1MTR8&ixlib=rb-4.0.3&q=85');">
+                    <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full">
+                        <h3 class="text-xl font-semibold">Web Development</h3>
+                    </div>
+                </div>
+                <div class="carousel-item bg-cover bg-center hidden" style="background-image: url('https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTE0ODF8&ixlib=rb-4.0.3&q=85');">
+                    <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full">
+                        <h3 class="text-xl font-semibold">Web Programming</h3>
+                    </div>
+                </div>
+                <div class="carousel-item bg-cover bg-center hidden" style="background-image: url('https://images.unsplash.com/photo-1521931961826-fe48677230a5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTE4MDJ8&ixlib=rb-4.0.3&q=85');">
+                    <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full">
+                        <h3 class="text-xl font-semibold">Android Studio</h3>
+                    </div>
+                </div>
 
-    <section id="about" class="hidden mb-8">
-      <h2 class="text-2xl font-bold mb-4">About</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div class="about-card bg-white p-4 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-2">Visi</h3>
-          <p>Menjadi yang terbaik dalam bidang teknologi informasi.</p>
-        </div>
-        <div class="about-card bg-white p-4 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-2">Misi</h3>
-          <p>Menyediakan solusi teknologi yang inovatif dan berkelanjutan.</p>
-        </div>
-        <div class="about-card bg-white p-4 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-2">Tujuan</h3>
-          <p>Mencapai kepuasan pelanggan melalui layanan berkualitas tinggi.</p>
-        </div>
-      </div>
-    </section>
+                <!-- Carousel Controls -->
+                <button id="prev" class="absolute top-1/2 transform -translate-y-1/2 left-2 bg-gray-800 text-white p-2 rounded-full">
+                    &lt;
+                </button>
+                <button id="next" class="absolute top-1/2 transform -translate-y-1/2 right-2 bg-gray-800 text-white p-2 rounded-full">
+                    &gt;
+                </button>
+            </div>
+        </section>
 
-    <section id="gallery" class="hidden mb-8">
-      <h2 class="text-2xl font-bold mb-4">Gallery</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <!-- Tambahkan konten galeri sesuai keinginan -->
-        <div class="gallery-card bg-white p-4 rounded-lg shadow-md">
-          <img src="https://images.unsplash.com/photo-1593720213681-e9a8778330a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NDY1MTR8&ixlib=rb-4.0.3&q=85" alt="Gallery 1" class="w-full h-48 object-cover rounded-lg">
-          <p class="text-center mt-2">Gallery 1</p>
-        </div>
-        <!-- Tambahkan lebih banyak gambar di sini -->
-        <div class="gallery-card bg-white p-4 rounded-lg shadow-md">
-          <img src="https://images.unsplash.com/photo-1593720213681-e9a8778330a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NDY1MTR8&ixlib=rb-4.0.3&q=85" alt="Gallery 1" class="w-full h-48 object-cover rounded-lg">
-          <p class="text-center mt-2">Gallery 1</p>
-        </div>
-        <!-- Tambahkan lebih banyak gambar di sini -->
-        <div class="gallery-card bg-white p-4 rounded-lg shadow-md">
-          <img src="https://images.unsplash.com/photo-1593720213681-e9a8778330a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NDY1MTR8&ixlib=rb-4.0.3&q=85" alt="Gallery 1" class="w-full h-48 object-cover rounded-lg">
-          <p class="text-center mt-2">Gallery 1</p>
-        </div>
-      </div>
-    </section>
+        <section id="about" class="hidden mb-8">
+            <h2 class="text-2xl font-bold mb-4">About</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="about-card bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Visi</h3>
+                    <p>Menjadi yang terbaik dalam bidang teknologi informasi.</p>
+                </div>
+                <div class="about-card bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Misi</h3>
+                    <p>Menyediakan solusi teknologi yang inovatif dan berkelanjutan.</p>
+                </div>
+                <div class="about-card bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Tujuan</h3>
+                    <p>Mencapai kepuasan pelanggan melalui layanan berkualitas tinggi.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="projects" class="hidden mb-8">
-      <h2 class="text-2xl font-bold mb-4">Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div class="project-card bg-white p-4 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-2">Project 1</h3>
-          <p>Deskripsi singkat tentang project 1.</p>
-        </div>
-        <div class="project-card bg-white p-4 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-2">Project 2</h3>
-          <p>Deskripsi singkat tentang project 2.</p>
-        </div>
-        <div class="project-card bg-white p-4 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-2">Project 3</h3>
-          <p>Deskripsi singkat tentang project 3.</p>
-        </div>
-      </div>
-    </section>
+        <section id="gallery" class="hidden mb-8">
+            <h2 class="text-2xl font-bold mb-4">Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Tambahkan konten galeri sesuai keinginan -->
+                <div class="gallery-card bg-white p-4 rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1593720213681-e9a8778330a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NDY1MTR8&ixlib=rb-4.0.3&q=85" alt="Gallery 1" class="w-full h-48 object-cover rounded-lg">
+                    <p class="text-center mt-2">Gallery 1</p>
+                </div>
+                <!-- Tambahkan lebih banyak gambar di sini -->
+                <div class="gallery-card bg-white p-4 rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1593720213681-e9a8778330a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NDY1MTR8&ixlib=rb-4.0.3&q=85" alt="Gallery 1" class="w-full h-48 object-cover rounded-lg">
+                    <p class="text-center mt-2">Gallery 1</p>
+                </div>
+                <!-- Tambahkan lebih banyak gambar di sini -->
+                <div class="gallery-card bg-white p-4 rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1593720213681-e9a8778330a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NDY1MTR8&ixlib=rb-4.0.3&q=85" alt="Gallery 1" class="w-full h-48 object-cover rounded-lg">
+                    <p class="text-center mt-2">Gallery 1</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact" class="hidden">
-      <h2 class="text-2xl font-bold mb-4">Contact</h2>
-      <div class="flex flex-col lg:flex-row lg:space-x-8">
-        <div class="map w-full lg:w-1/2 h-96 bg-gray-200 mb-4 lg:mb-0">
-          <p class="text-center pt-24">Map Placeholder</p>
-        </div>
-        <form id="myForm" enctype="multipart/form-data" class="w-full lg:w-1/2 bg-white p-4 rounded-lg shadow-md space-y-4">
-          <!-- Form Fields -->
+        <section id="projects" class="hidden mb-8">
+            <h2 class="text-2xl font-bold mb-4">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="project-card bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+                    <p>Deskripsi singkat tentang project 1.</p>
+                </div>
+                <div class="project-card bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+                    <p>Deskripsi singkat tentang project 2.</p>
+                </div>
+                <div class="project-card bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Project 3</h3>
+                    <p>Deskripsi singkat tentang project 3.</p>
+                </div>
+            </div>
+        </section>
 
-          <div>
-            <label for="name" class="block text-gray-700">Nama:</label>
-            <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-lg p-2">
-          </div>
+        <section id="contact" class="hidden">
+            <h2 class="text-2xl font-bold mb-4">Contact</h2>
+            <div class="flex flex-col lg:flex-row lg:space-x-8">
+                <div class="map w-full lg:w-1/2 h-96 bg-gray-200 mb-4 lg:mb-0">
+                    <p class="text-center pt-24">Map Placeholder</p>
+                </div>
+                <form id="myForm" enctype="multipart/form-data" class="w-full lg:w-1/2 bg-white p-4 rounded-lg shadow-md space-y-4">
+                    <!-- Form Fields -->
 
-          <div>
-            <label for="email" class="block text-gray-700">Email:</label>
-            <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-lg p-2">
-          </div>
+                    <div>
+                        <label for="name" class="block text-gray-700">Nama:</label>
+                        <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-lg p-2">
+                    </div>
 
-          <div>
-            <label for="phone" class="block text-gray-700">Telepon:</label>
-            <input type="text" name="phone" id="phone" class="w-full border border-gray-300 rounded-lg p-2" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="12" minlength="10" required>
-          </div>
+                    <div>
+                        <label for="email" class="block text-gray-700">Email:</label>
+                        <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-lg p-2">
+                    </div>
 
-          <div>
-            <label for="address" class="block text-gray-700">Alamat:</label>
-            <textarea id="address" name="address" class="w-full border border-gray-300 rounded-lg p-2"></textarea>
-          </div>
-          <div>
-            <label for="message" class="block text-gray-700">Pesan:</label>
-            <textarea id="message" name="message" class="w-full border border-gray-300 rounded-lg p-2"></textarea>
-          </div>
-          <div>
-            <label for="photo" class="block text-sm font-medium">Upload Photo</label>
-            <input type="file" id="photo" name="photo" accept="image/jpeg,image/png" capture="user" class="mt-1 block w-full" required>
-          </div>
-          <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg">Kirim</button>
-          <div id="form-notification" class="mt-4"></div>
-        </form>
-      </div>
-    </section>
+                    <div>
+                        <label for="phone" class="block text-gray-700">Telepon:</label>
+                        <input type="text" name="phone" id="phone" class="w-full border border-gray-300 rounded-lg p-2" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="12" minlength="10" required>
+                    </div>
 
-    <!-- Section Kursus -->
-    <section id="computer-course-link" class="hidden">
-      <h2 class="text-2xl font-bold mb-4">Kursus Komputer</h2>
-      <p>Dalam kursus ini, Anda akan mempelajari dasar-dasar penggunaan komputer, termasuk sistem operasi, manajemen file, dan perangkat lunak produktivitas seperti Microsoft Office. Kursus ini cocok untuk pemula yang ingin memperdalam pemahaman mereka tentang komputer dan meningkatkan keterampilan mereka dalam menggunakan perangkat keras dan perangkat lunak komputer.</p>
-      <ul class="list-disc pl-5 mt-4">
-        <li>Pengenalan Sistem Operasi (Windows, macOS)</li>
-        <li>Manajemen File dan Folder</li>
-        <li>Penggunaan Microsoft Office (Word, Excel, PowerPoint)</li>
-        <li>Pengaturan dan Pemeliharaan Komputer</li>
-      </ul>
-      <button class="continue-course bg-blue-600 text-white py-2 px-4 mt-2 rounded">Lanjut Kursus</button>
-    </section>
+                    <div>
+                        <label for="address" class="block text-gray-700">Alamat:</label>
+                        <textarea id="address" name="address" class="w-full border border-gray-300 rounded-lg p-2"></textarea>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700">Pesan:</label>
+                        <textarea id="message" name="message" class="w-full border border-gray-300 rounded-lg p-2"></textarea>
+                    </div>
+                    <div>
+                        <label for="photo" class="block text-sm font-medium">Upload Photo</label>
+                        <input type="file" id="photo" name="photo" accept="image/jpeg,image/png" capture="user" class="mt-1 block w-full" required>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg">Kirim</button>
+                    <div id="form-notification" class="mt-4"></div>
+                </form>
+            </div>
+        </section>
 
-    <section id="web-course-link" class="hidden">
-      <h2 class="text-2xl font-bold mb-4">Kursus Web Programming</h2>
-      <p>Kursus ini dirancang untuk mengajarkan Anda bagaimana membangun website yang interaktif dan responsif menggunakan HTML, CSS, dan JavaScript. Anda juga akan diperkenalkan dengan framework web seperti Bootstrap dan Tailwind CSS, serta belajar cara mengelola data dengan menggunakan API.</p>
-      <ul class="list-disc pl-5 mt-4">
-        <li>Dasar-dasar HTML5 dan CSS3</li>
-        <li>Pembuatan Layout Responsif dengan Flexbox dan Grid</li>
-        <li>JavaScript untuk Interaktivitas</li>
-        <li>Pengenalan ke Framework (Bootstrap, Tailwind CSS)</li>
-        <li>Menggunakan API untuk Pengelolaan Data</li>
-      </ul>
-      <button class="continue-course bg-blue-600 text-white py-2 px-4 mt-2 rounded">Lanjut Kursus</button>
-    </section>
+        <!-- Section Kursus -->
+        <section id="computer-course-link" class="hidden">
+            <h2 class="text-2xl font-bold mb-4">Kursus Komputer</h2>
+            <p>Dalam kursus ini, Anda akan mempelajari dasar-dasar penggunaan komputer, termasuk sistem operasi, manajemen file, dan perangkat lunak produktivitas seperti Microsoft Office. Kursus ini cocok untuk pemula yang ingin memperdalam pemahaman mereka tentang komputer dan meningkatkan keterampilan mereka dalam menggunakan perangkat keras dan perangkat lunak komputer.</p>
+            <ul class="list-disc pl-5 mt-4">
+                <li>Pengenalan Sistem Operasi (Windows, macOS)</li>
+                <li>Manajemen File dan Folder</li>
+                <li>Penggunaan Microsoft Office (Word, Excel, PowerPoint)</li>
+                <li>Pengaturan dan Pemeliharaan Komputer</li>
+            </ul>
+            <button class="continue-course bg-blue-600 text-white py-2 px-4 mt-2 rounded">Lanjut Kursus</button>
+        </section>
 
-    <section id="android-course-link" class="hidden">
-      <h2 class="text-2xl font-bold mb-4">Kursus Android Studio</h2>
-      <p>Kursus ini akan membimbing Anda melalui pengembangan aplikasi Android dari awal hingga akhir menggunakan Android Studio. Anda akan mempelajari cara membuat aplikasi yang intuitif dan menarik dengan berbagai komponen Android, serta mengoptimalkan aplikasi Anda untuk berbagai jenis perangkat.</p>
-      <ul class="list-disc pl-5 mt-4">
-        <li>Pengenalan Android Studio dan Struktur Proyek</li>
-        <li>Pembuatan Layout dan Desain UI</li>
-        <li>Pengelolaan Aktivitas dan Fragment</li>
-        <li>Implementasi Database dengan SQLite</li>
-        <li>Publikasi Aplikasi ke Google Play Store</li>
-      </ul>
-      <button class="continue-course bg-blue-600 text-white py-2 px-4 mt-2 rounded">Lanjut Kursus</button>
-    </section>
-    <!-- Pendaftaran  -->
-    <section id="registration-form" class="hidden mb-8">
-      <h2 class="text-2xl font-bold mb-4">Formulir Pendaftaran Kursus</h2>
-      <form id="course-form">
-        <div class="mb-4">
-          <label for="full-name" class="block text-sm font-medium">Nama Lengkap</label>
-          <input type="text" id="full-name" class="mt-1 p-2 w-full border rounded">
-        </div>
-        <div class="mb-4">
-          <label for="birthplace" class="block text-sm font-medium">Tempat Lahir</label>
-          <input type="text" id="birthplace" class="mt-1 p-2 w-full border rounded">
-        </div>
-        <div class="mb-4">
-          <label for="birthdate" class="block text-sm font-medium">Tanggal Lahir</label>
-          <input type="date" id="birthdate" class="mt-1 p-2 w-full border rounded">
-        </div>
-        <div class="mb-4">
-          <label for="mother-name" class="block text-sm font-medium">Nama Ibu</label>
-          <input type="text" id="mother-name" class="mt-1 p-2 w-full border rounded">
-        </div>
-        <div class="mb-4">
-          <label for="father-name" class="block text-sm font-medium">Nama Ayah</label>
-          <input type="text" id="father-name" class="mt-1 p-2 w-full border rounded">
-        </div>
-        <div class="mb-4">
-          <label for="education" class="block text-sm font-medium">Pendidikan</label>
-          <select id="education" class="mt-1 p-2 w-full border rounded">
-            <option value="">Pilih Pendidikan</option>
-            <option value="SMA">SMA</option>
-            <option value="Diploma">Diploma</option>
-            <option value="Sarjana">Sarjana</option>
-          </select>
-        </div>
-        <div class="mb-4">
-          <label for="job" class="block text-sm font-medium">Pekerjaan</label>
-          <select id="job" class="mt-1 p-2 w-full border rounded">
-            <option value="">Pilih Pekerjaan</option>
-            <option value="Pelajar">Pelajar</option>
-            <option value="Pegawai">Pegawai</option>
-            <option value="Wiraswasta">Wiraswasta</option>
-          </select>
-        </div>
-        <div class="mb-4">
-          <label for="phone" class="block text-sm font-medium">Nomor Telepon</label>
-          <input type="tel" id="phone" class="mt-1 p-2 w-full border rounded">
-        </div>
-        <div class="mb-4">
-          <label for="email" class="block text-sm font-medium">Email</label>
-          <input type="email" id="email" class="mt-1 p-2 w-full border rounded">
-        </div>
-        <div class="mb-4">
-          <label for="address" class="block text-sm font-medium">Alamat</label>
-          <textarea id="address" class="mt-1 p-2 w-full border rounded"></textarea>
-        </div>
-        <div class="mb-4">
-          <label for="payment-method" class="block text-sm font-medium">Pilihan Pembayaran</label>
-          <select id="payment-method" class="mt-1 p-2 w-full border rounded">
-            <option value="">Pilih Metode Pembayaran</option>
-            <option value="GoPay">GoPay</option>
-            <option value="LinkAja">LinkAja</option>
-            <option value="PayPal">PayPal</option>
-          </select>
-        </div>
-        <div class="mb-4">
-          <label for="biaya" class="block text-sm font-medium">Biaya Pendaftaran</label>
-          <input type="number" id="biaya" name="biaya" class="mt-1 p-2 w-full border rounded"></input>
-        </div>
-        <div class="flex justify-between">
-          <button type="button" id="back-button" class="bg-gray-600 text-white py-2 px-4 rounded">Kembali</button>
-          <button type="submit" id="submit-button" class="bg-green-600 text-white py-2 px-4 rounded" disabled>Bayar Sekarang</button>
-        </div>
-      </form>
-    </section>
-  </main>
+        <section id="web-course-link" class="hidden">
+            <h2 class="text-2xl font-bold mb-4">Kursus Web Programming</h2>
+            <p>Kursus ini dirancang untuk mengajarkan Anda bagaimana membangun website yang interaktif dan responsif menggunakan HTML, CSS, dan JavaScript. Anda juga akan diperkenalkan dengan framework web seperti Bootstrap dan Tailwind CSS, serta belajar cara mengelola data dengan menggunakan API.</p>
+            <ul class="list-disc pl-5 mt-4">
+                <li>Dasar-dasar HTML5 dan CSS3</li>
+                <li>Pembuatan Layout Responsif dengan Flexbox dan Grid</li>
+                <li>JavaScript untuk Interaktivitas</li>
+                <li>Pengenalan ke Framework (Bootstrap, Tailwind CSS)</li>
+                <li>Menggunakan API untuk Pengelolaan Data</li>
+            </ul>
+            <button class="continue-course bg-blue-600 text-white py-2 px-4 mt-2 rounded">Lanjut Kursus</button>
+        </section>
 
-  <script src="script.js"></script>
+        <section id="android-course-link" class="hidden">
+            <h2 class="text-2xl font-bold mb-4">Kursus Android Studio</h2>
+            <p>Kursus ini akan membimbing Anda melalui pengembangan aplikasi Android dari awal hingga akhir menggunakan Android Studio. Anda akan mempelajari cara membuat aplikasi yang intuitif dan menarik dengan berbagai komponen Android, serta mengoptimalkan aplikasi Anda untuk berbagai jenis perangkat.</p>
+            <ul class="list-disc pl-5 mt-4">
+                <li>Pengenalan Android Studio dan Struktur Proyek</li>
+                <li>Pembuatan Layout dan Desain UI</li>
+                <li>Pengelolaan Aktivitas dan Fragment</li>
+                <li>Implementasi Database dengan SQLite</li>
+                <li>Publikasi Aplikasi ke Google Play Store</li>
+            </ul>
+            <button class="continue-course bg-blue-600 text-white py-2 px-4 mt-2 rounded">Lanjut Kursus</button>
+        </section>
+        <!-- Pendaftaran  -->
+        <section id="registration-form" class="hidden mb-8">
+            <h2 class="text-2xl font-bold mb-4">Formulir Pendaftaran Kursus</h2>
+            <form id="course-form">
+                <div class="mb-4">
+                    <label for="full-name" class="block text-sm font-medium">Nama Lengkap</label>
+                    <input type="text" id="full-name" class="mt-1 p-2 w-full border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="birthplace" class="block text-sm font-medium">Tempat Lahir</label>
+                    <input type="text" id="birthplace" class="mt-1 p-2 w-full border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="birthdate" class="block text-sm font-medium">Tanggal Lahir</label>
+                    <input type="date" id="birthdate" class="mt-1 p-2 w-full border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="mother-name" class="block text-sm font-medium">Nama Ibu</label>
+                    <input type="text" id="mother-name" class="mt-1 p-2 w-full border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="father-name" class="block text-sm font-medium">Nama Ayah</label>
+                    <input type="text" id="father-name" class="mt-1 p-2 w-full border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="education" class="block text-sm font-medium">Pendidikan</label>
+                    <select id="education" class="mt-1 p-2 w-full border rounded">
+                        <option value="">Pilih Pendidikan</option>
+                        <option value="SMA">SMA</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Sarjana">Sarjana</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="job" class="block text-sm font-medium">Pekerjaan</label>
+                    <select id="job" class="mt-1 p-2 w-full border rounded">
+                        <option value="">Pilih Pekerjaan</option>
+                        <option value="Pelajar">Pelajar</option>
+                        <option value="Pegawai">Pegawai</option>
+                        <option value="Wiraswasta">Wiraswasta</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-sm font-medium">Nomor Telepon</label>
+                    <input type="tel" id="phone" class="mt-1 p-2 w-full border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium">Email</label>
+                    <input type="email" id="email" class="mt-1 p-2 w-full border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="address" class="block text-sm font-medium">Alamat</label>
+                    <textarea id="address" class="mt-1 p-2 w-full border rounded"></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="payment-method" class="block text-sm font-medium">Pilihan Pembayaran</label>
+                    <select id="payment-method" class="mt-1 p-2 w-full border rounded">
+                        <option value="">Pilih Metode Pembayaran</option>
+                        <option value="GoPay">GoPay</option>
+                        <option value="LinkAja">LinkAja</option>
+                        <option value="PayPal">PayPal</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="biaya" class="block text-sm font-medium">Biaya Pendaftaran</label>
+                    <input type="number" id="biaya" name="biaya" class="mt-1 p-2 w-full border rounded"></input>
+                </div>
+                <div class="flex justify-between">
+                    <button type="button" id="back-button" class="bg-gray-600 text-white py-2 px-4 rounded">Kembali</button>
+                    <button type="submit" id="submit-button" class="bg-green-600 text-white py-2 px-4 rounded" disabled>Bayar Sekarang</button>
+                </div>
+            </form>
+        </section>
+    </main>
 
+    <script src="script.js"></script>
+    <script src="./public/script.js"></script>
 </body>
 
 </html>
