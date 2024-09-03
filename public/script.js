@@ -6,7 +6,7 @@ document.getElementById("menu-toggle").addEventListener("click", function() {
 document.addEventListener("click", function(event) {
     const sidebar = document.getElementById("sidebar");
     const toggle = document.getElementById("menu-toggle");
-    if (!sidebar.con / home / user / latihan5 / src / csstains(event.target) && !toggle.contains(event.target)) {
+    if (!sidebar.contains(event.target) && !toggle.contains(event.target)) {
         sidebar.classList.add("-translate-x-full");
     }
 });
