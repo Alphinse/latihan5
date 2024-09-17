@@ -153,3 +153,127 @@ Object.keys(courseLinks).forEach((linkId) => {
         document.getElementById(courseLinks[linkId]).classList.remove("hidden");
     });
 });
+//
+// Mendapatkan elemen yang dibutuhkan untuk button/tombol
+const computerCourseButton = document.getElementById(
+    "continue-course-computer-btn"
+);
+const webCourseButton = document.getElementById("continue-course-web-btn");
+const androidCourseButton = document.getElementById(
+    "continue-course-android-btn"
+);
+
+// ini elemen yang di ambil dari card
+const computerCourseCard = document.getElementById("computer-course-card");
+const webCourseCard = document.getElementById("web-course-card");
+const androidCourseCard = document.getElementById("android-course-card");
+
+const registrationForm = document.getElementById("registration-form");
+const backButton = document.getElementById("back-button");
+
+// Fungsi untuk menyembunyikan semua kartu kursus
+function hideAllCourseCards() {
+    computerCourseCard.classList.add("hidden");
+    webCourseCard.classList.add("hidden");
+    androidCourseCard.classList.add("hidden");
+}
+
+// Event listener untuk tombol "Lanjut Kursus" (kursus komputer)
+computerCourseButton.addEventListener("click", function() {
+    hideAllCourseCards();
+    registrationForm.classList.remove("hidden");
+});
+
+// Event listener untuk tombol "Lanjut Kursus" (kursus web)
+webCourseButton.addEventListener("click", function() {
+    hideAllCourseCards();
+    registrationForm.classList.remove("hidden");
+});
+
+// Event listener untuk tombol "Lanjut Kursus" (kursus android)
+androidCourseButton.addEventListener("click", function() {
+    hideAllCourseCards();
+    registrationForm.classList.remove("hidden");
+});
+
+// Event listener untuk tombol "Kembali"
+backButton.addEventListener("click", function() {
+    registrationForm.classList.add("hidden");
+    computerCourseCard.classList.remove("hidden");
+    webCourseCard.classList.remove("hidden");
+    androidCourseCard.classList.remove("hidden");
+});
+//
+// Update course fee based on selection
+function updateBiaya() {
+    const kursus = document.getElementById("kursus").value;
+    const biaya = document.getElementById("biaya");
+    const biayaMap = {
+        komputer: "Rp 1.800.000,00 (satu juta delapan ratus ribu rupiah)",
+        web: "Rp 3.400.000,00 (tiga juta empat ratus ribu rupiah)",
+        android: "Rp 4.478.000,00 (empat juta empat ratus tujuh puluh delapan ribu rupiah)"
+    };
+    biaya.value = biayaMap[kursus] || "";
+}
+//
+const projects = [{
+        id: 1,
+        name: "Web Development",
+        email: "project1@example.com",
+        job: "Developer",
+        skills: "HTML, CSS, JavaScript",
+        image: "https://images.unsplash.com/photo-1531030874896-fdef6826f2f7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTM4Njh8&ixlib=rb-4.0.3&q=85"
+    },
+    {
+        id: 2,
+        name: "Web Programming",
+        email: "projects2@example.com",
+        job: "Programmer",
+        skills: "Java, Python, PHP",
+        image: "https://images.unsplash.com/photo-1605379399642-870262d3d051?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTM4Njh8&ixlib=rb-4.0.3&q=85"
+    },
+    {
+        id: 3,
+        name: "Android Studio",
+        email: "project3@example.com",
+        job: "Mobile Developer",
+        skills: "Android, Java, Kotlin",
+        image: "https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTQwNTB8&ixlib=rb-4.0.3&q=85"
+    }
+];
+
+// Ketika tombol "Detail" diklik
+document.querySelectorAll(".detail-btn").forEach((btn) => {
+    btn.addEventListener("click", function() {
+        const id = this.getAttribute("data-id");
+        const project = projects.find((p) => p.id == id);
+
+        // Sembunyikan semua card
+        document.getElementById("project-cards").classList.add("hidden");
+
+        // Tampilkan form detail dan isi datanya
+        document.getElementById("form-container").classList.remove("hidden");
+        document.getElementById("detail-image").src = project.image;
+        document.getElementById(
+            "detail-name"
+        ).textContent = `Nama: ${project.name}`;
+        document.getElementById(
+            "detail-email"
+        ).textContent = `Email: ${project.email}`;
+        document.getElementById(
+            "detail-job"
+        ).textContent = `Pekerjaan: ${project.job}`;
+        document.getElementById(
+            "detail-skills"
+        ).textContent = `Keahlian: ${project.skills}`;
+    });
+});
+
+// Ketika tombol "Kembali" diklik
+document.getElementById("back-btn").addEventListener("click", function() {
+    // Tampilkan kembali project cards
+    document.getElementById("project-cards").classList.remove("hidden");
+
+    // Sembunyikan form detail
+    document.getElementById("form-container").classList.add("hidden");
+});

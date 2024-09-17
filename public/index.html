@@ -11,7 +11,7 @@
 
 <body class="font-sans">
     <!-- Header -->
-    <header class="bg-blue-600 text-white p-4 fixed w-full top-0 z-50">
+    <header class="bg-blue-600 text-white p-4 fixed w-full top-0 z-30">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-xl font-bold">Imat <span>Abu</span> Kamal</h1>
             <button id="menu-toggle" class="lg:hidden block">
@@ -23,39 +23,50 @@
     </header>
 
     <!-- Sidebar -->
-    <aside id="sidebar" class="bg-gray-800 text-white w-60 space-y-6 py-20 px-2 fixed inset-y-0 left-0 lg:translate-x-0 transform -translate-x-full transition-transform duration-200 ease-in-out z-20">
+    <aside id="sidebar" class="bg-slate-50 text-blue-700 w-60 space-y-6 py-20 px-2 fixed inset-y-0 left-0 lg:translate-x-0 transform -translate-x-full transition-transform duration-200 ease-in-out z-10">
         <nav>
+            <!-- Menu Items -->
             <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="home">
                 <span class="material-symbols-outlined mr-2">home</span>
                 Home
             </a>
-            <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="about">
+            <a href="#" class="flex items-center py-2 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="about">
                 <span class="material-symbols-outlined mr-2">info</span>
                 About
             </a>
-            <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="gallery">
+            <a href="#" class="flex items-center py-2 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="gallery">
                 <span class="material-symbols-outlined mr-2">photo_library</span>
                 Gallery
             </a>
-            <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="projects">
+            <a href="#" class="flex items-center py-2 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="projects">
                 <span class="material-symbols-outlined mr-2">work</span>
                 Projects
             </a>
-            <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="contact">
+            <a href="#" class="flex items-center py-2 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="contact">
                 <span class="material-symbols-outlined mr-2">contact_mail</span>
                 Contact
             </a>
+
             <!-- Kursus Menu -->
             <div class="group">
-                <a href="#" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                <a href="#" class="flex items-center py-2 px-4 rounded transition duration-200 hover:bg-gray-700">
                     <span class="material-symbols-outlined mr-2">school</span>
-                    Kursus
+                    Course
                     <span class="ml-auto transform transition-transform duration-200 group-hover:rotate-90">▼</span>
                 </a>
                 <div class="hidden group-hover:block ml-8 space-y-2 mt-2">
-                    <a href="#" class="block py-2 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="computer-course-link">Komputer</a>
-                    <a href="#" class="block py-2 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="web-course-link">Web Programming</a>
-                    <a href="#" class="block py-2 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="android-course-link">Android Studio</a>
+                    <a href="#" class="flex items-center py-2 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="computer-course-link">
+                        <span class="material-symbols-outlined mr-2">computer</span>
+                        Computer Course
+                    </a>
+                    <a href="#" class="flex items-center py-2 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="web-course-link">
+                        <span class="material-symbols-outlined mr-2">web</span>
+                        Web Course
+                    </a>
+                    <a href="#" class="flex items-center py-2 px-4 rounded transition duration-200 hover:bg-gray-700" data-section="android-course-link">
+                        <span class="material-symbols-outlined mr-2">smartphone</span>
+                        Android Studio Course
+                    </a>
                 </div>
             </div>
         </nav>
@@ -64,7 +75,7 @@
     <!-- Content -->
     <main id="content" class="lg:ml-64 pt-20 pb-20 ml-0 md:ml-0 p-4">
         <div class="marquee">
-            <span>Selamat datang di Website resmi kami, "bijaklah dalam mencerna
+            <span class="text-2xl text-blue-600">Selamat datang di Website resmi kami, "bijaklah dalam mencerna
                 informasi dan menggunakan teknologi".</span>
         </div>
 
@@ -103,7 +114,7 @@
             </div>
         </section>
 
-        <section id="about" class="hidden mb-8">
+        <section id="about" class="mb-8">
             <h2 class="text-2xl font-bold mb-4">About</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div class="about-card bg-white p-4 rounded-lg shadow-md">
@@ -125,40 +136,67 @@
 
         <section id="gallery" class="hidden mb-8">
             <h2 class="text-2xl font-bold mb-4">Gallery</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!-- Tambahkan konten galeri sesuai keinginan -->
-                <div class="gallery-card bg-white p-4 rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1593720213681-e9a8778330a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NDY1MTR8&ixlib=rb-4.0.3&q=85" alt="Gallery 1" class="w-full h-48 object-cover rounded-lg" />
-                    <p class="text-center mt-2">Gallery 1</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="cards bg-white p-4 rounded-lg shadow-md">
+                    <img class="w-full h-48 object-contain mb-4 rounded-lg" src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTMwOTh8&ixlib=rb-4.0.3&q=85" alt="Gallery Image 1" />
+                    <h3 class="text-xl font-semibold mb-2">Image 1</h3>
+                    <p>Deskripsi gambar 1.</p>
                 </div>
-                <!-- Tambahkan lebih banyak gambar di sini -->
-                <div class="gallery-card bg-white p-4 rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1593720213681-e9a8778330a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NDY1MTR8&ixlib=rb-4.0.3&q=85" alt="Gallery 1" class="w-full h-48 object-cover rounded-lg" />
-                    <p class="text-center mt-2">Gallery 1</p>
+                <div class="cards bg-white p-4 rounded-lg shadow-md">
+                    <img class="w-full h-48 object-contain mb-4 rounded-lg" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTMzMDN8&ixlib=rb-4.0.3&q=85" alt="Gallery Image 2" />
+                    <h3 class="text-xl font-semibold mb-2">Image 2</h3>
+                    <p>Deskripsi gambar 2.</p>
                 </div>
-                <!-- Tambahkan lebih banyak gambar di sini -->
-                <div class="gallery-card bg-white p-4 rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1593720213681-e9a8778330a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NDY1MTR8&ixlib=rb-4.0.3&q=85" alt="Gallery 1" class="w-full h-48 object-cover rounded-lg" />
-                    <p class="text-center mt-2">Gallery 1</p>
+                <div class="cards bg-white p-4 rounded-lg shadow-md">
+                    <img class="w-full h-48 object-contain mb-4 rounded-lg" src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTMzMDN8&ixlib=rb-4.0.3&q=85" alt="Gallery Image 3" />
+                    <h3 class="text-xl font-semibold mb-2">Image 3</h3>
+                    <p>Deskripsi gambar 3.</p>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="hidden mb-8">
+        <section id="projects" class="mb-8">
             <h2 class="text-2xl font-bold mb-4">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="project-card bg-white p-4 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Project 1</h3>
-                    <p>Deskripsi singkat tentang project 1.</p>
+            <div id="project-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Project Cards -->
+                <div class="card bg-white p-4 rounded-lg shadow-md" data-id="1">
+                    <img class="w-full h-48 object-contain mb-4 rounded-lg" src="https://images.unsplash.com/photo-1531030874896-fdef6826f2f7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTM4Njh8&ixlib=rb-4.0.3&q=85" alt="Project 1" />
+                    <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+                    <p>Email: project1@example.com</p>
+                    <button class="detail-btn bg-blue-500 text-white px-4 py-2 rounded-lg mt-2" data-id="1">
+                        Detail
+                    </button>
                 </div>
-                <div class="project-card bg-white p-4 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Project 2</h3>
-                    <p>Deskripsi singkat tentang project 2.</p>
+
+                <div class="card bg-white p-4 rounded-lg shadow-md" data-id="2">
+                    <img class="w-full h-48 object-contain mb-4 rounded-lg" src="https://images.unsplash.com/photo-1605379399642-870262d3d051?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTM4Njh8&ixlib=rb-4.0.3&q=85" alt="Project 2" />
+                    <h3 class="text-xl font-semibold mb-2">Web Programming</h3>
+                    <p>Email: projects2@example.com</p>
+                    <button class="detail-btn bg-blue-500 text-white px-4 py-2 rounded-lg mt-2" data-id="2">
+                        Detail
+                    </button>
                 </div>
-                <div class="project-card bg-white p-4 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Project 3</h3>
-                    <p>Deskripsi singkat tentang project 3.</p>
+
+                <div class="card bg-white p-4 rounded-lg shadow-md" data-id="3">
+                    <img class="w-full h-48 object-contain mb-4 rounded-lg" src="https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ4NTQwNTB8&ixlib=rb-4.0.3&q=85" alt="Project 3" />
+                    <h3 class="text-xl font-semibold mb-2">Android Studio</h3>
+                    <p>Email: project3@example.com</p>
+                    <button class="detail-btn bg-blue-500 text-white px-4 py-2 rounded-lg mt-2" data-id="3">
+                        Detail
+                    </button>
                 </div>
+            </div>
+
+            <!-- Form Detail Section (Hidden by default) -->
+            <div id="form-container" class="hidden bg-white p-4 rounded-lg shadow-md">
+                <img id="detail-image" class="w-full h-32 object-cover mb-4 rounded-lg" src="" alt="Detail Image" />
+                <h3 id="detail-name" class="text-xl font-semibold mb-2">Nama:</h3>
+                <p id="detail-email">Email:</p>
+                <p id="detail-job">Pekerjaan:</p>
+                <p id="detail-skills">Keahlian:</p>
+                <button id="back-btn" class="bg-red-500 text-white px-4 py-2 rounded-lg mt-2">
+                    Kembali
+                </button>
             </div>
         </section>
 
@@ -206,211 +244,230 @@
             </div>
         </section>
 
-        <!-- Section Kursus -->
-        <section id="computer-course-link" class="hidden">
-            <h2 class="text-2xl font-bold mb-4">Kursus Komputer</h2>
-            <p>
-                Dalam kursus ini, Anda akan mempelajari dasar-dasar penggunaan
-                komputer, termasuk sistem operasi, manajemen file, dan perangkat lunak
-                produktivitas seperti Microsoft Office. Kursus ini cocok untuk pemula
-                yang ingin memperdalam pemahaman mereka tentang komputer dan
-                meningkatkan keterampilan mereka dalam menggunakan perangkat keras dan
-                perangkat lunak komputer.
-            </p>
-            <ul class="list-disc pl-5 mt-4">
-                <li>Pengenalan Sistem Operasi (Windows, macOS)</li>
-                <li>Manajemen File dan Folder</li>
-                <li>Penggunaan Microsoft Office (Word, Excel, PowerPoint)</li>
-                <li>Pengaturan dan Pemeliharaan Komputer</li>
-            </ul>
-            <button class="continue-course bg-blue-600 text-white py-2 px-4 mt-2 rounded">
-                Lanjut Kursus
-            </button>
+        <!-- Kursus -->
+        <section id="computer-course-link" class="continue-course bg-white-600 text-blue py-2 px-4 rounded">
+            <div id="computer-course-card" class="course-card bg-white p-4 rounded-lg shadow-md mb-4">
+                <h2 class="text-2xl font-bold mb-4">Kursus Komputer</h2>
+                <p>
+                    Dalam kursus ini, Anda akan mempelajari dasar-dasar penggunaan
+                    komputer, termasuk sistem operasi, manajemen file, dan perangkat
+                    lunak produktivitas seperti Microsoft Office. Kursus ini cocok untuk
+                    pemula yang ingin memperdalam pemahaman mereka tentang komputer dan
+                    meningkatkan keterampilan mereka dalam menggunakan perangkat keras
+                    dan perangkat lunak komputer.
+                </p>
+                <ul class="list-disc pl-5 mt-4">
+                    <li>Pengenalan Sistem Operasi (Windows, macOS)</li>
+                    <li>Manajemen File dan Folder</li>
+                    <li>Penggunaan Microsoft Office (Word, Excel, PowerPoint)</li>
+                    <li>Pengaturan dan Pemeliharaan Komputer</li>
+                </ul>
+                <button id="continue-course-computer-btn" class="continue-course bg-blue-600 text-white py-2 px-4 rounded">
+                    Lanjut Kursus
+                </button>
+            </div>
         </section>
 
-        <section id="web-course-link" class="hidden">
-            <h2 class="text-2xl font-bold mb-4">Kursus Web Programming</h2>
-            <p>
-                Kursus ini dirancang untuk mengajarkan Anda bagaimana membangun
-                website yang interaktif dan responsif menggunakan HTML, CSS, dan
-                JavaScript. Anda juga akan diperkenalkan dengan framework web seperti
-                Bootstrap dan Tailwind CSS, serta belajar cara mengelola data dengan
-                menggunakan API.
-            </p>
-            <ul class="list-disc pl-5 mt-4">
-                <li>Dasar-dasar HTML5 dan CSS3</li>
-                <li>Pembuatan Layout Responsif dengan Flexbox dan Grid</li>
-                <li>JavaScript untuk Interaktivitas</li>
-                <li>Pengenalan ke Framework (Bootstrap, Tailwind CSS)</li>
-                <li>Menggunakan API untuk Pengelolaan Data</li>
-            </ul>
-            <button class="continue-course bg-blue-600 text-white py-2 px-4 mt-2 rounded">
-                Lanjut Kursus
-            </button>
+        <section id="web-course-link" class="continue-course bg-white-600 text-blue py-2 px-4 rounded">
+            <div id="web-course-card" class="course-card bg-white p-4 rounded-lg shadow-md mb-4">
+                <h2 class="text-2xl font-bold mb-4">Kursus Web Programming</h2>
+                <p>
+                    Kursus ini dirancang untuk mengajarkan Anda bagaimana membangun
+                    website yang interaktif dan responsif menggunakan HTML, CSS, dan
+                    JavaScript. Anda juga akan diperkenalkan dengan framework web
+                    seperti Bootstrap dan Tailwind CSS, serta belajar cara mengelola
+                    data dengan menggunakan API.
+                </p>
+                <ul class="list-disc pl-5 mt-4">
+                    <li>Dasar-dasar HTML5 dan CSS3</li>
+                    <li>Pembuatan Layout Responsif dengan Flexbox dan Grid</li>
+                    <li>JavaScript untuk Interaktivitas</li>
+                    <li>Pengenalan ke Framework (Bootstrap, Tailwind CSS)</li>
+                    <li>Menggunakan API untuk Pengelolaan Data</li>
+                </ul>
+                <button id="continue-course-web-btn" class="continue-course bg-blue-600 text-white py-2 px-4 rounded">
+                    Lanjut Kursus
+                </button>
+            </div>
         </section>
 
-        <section id="android-course-link" class="hidden">
-            <h2 class="text-2xl font-bold mb-4">Kursus Android Studio</h2>
-            <p>
-                Kursus ini akan membimbing Anda melalui pengembangan aplikasi Android
-                dari awal hingga akhir menggunakan Android Studio. Anda akan
-                mempelajari cara membuat aplikasi yang intuitif dan menarik dengan
-                berbagai komponen Android, serta mengoptimalkan aplikasi Anda untuk
-                berbagai jenis perangkat.
-            </p>
-            <ul class="list-disc pl-5 mt-4">
-                <li>Pengenalan Android Studio dan Struktur Proyek</li>
-                <li>Pembuatan Layout dan Desain UI</li>
-                <li>Pengelolaan Aktivitas dan Fragment</li>
-                <li>Implementasi Database dengan SQLite</li>
-                <li>Publikasi Aplikasi ke Google Play Store</li>
-            </ul>
-            <button class="continue-course bg-blue-600 text-white py-2 px-4 mt-2 rounded">
-                Lanjut Kursus
-            </button>
+        <section id="android-course-link" class="continue-course bg-white-600 text-blue py-2 px-4 rounded">
+            <div id="android-course-card" class="course-card bg-white p-4 rounded-lg shadow-md mb-4">
+                <h2 class="text-2xl font-bold mb-4">Kursus Android Studio</h2>
+                <p>
+                    Kursus ini akan membimbing Anda melalui pengembangan aplikasi
+                    Android dari awal hingga akhir menggunakan Android Studio. Anda akan
+                    mempelajari cara membuat aplikasi yang intuitif dan menarik dengan
+                    berbagai komponen Android, serta mengoptimalkan aplikasi Anda untuk
+                    berbagai jenis perangkat.
+                </p>
+                <ul class="list-disc pl-5 mt-4">
+                    <li>Pengenalan Android Studio dan Struktur Proyek</li>
+                    <li>Pembuatan Layout dan Desain UI</li>
+                    <li>Pengelolaan Aktivitas dan Fragment</li>
+                    <li>Implementasi Database dengan SQLite</li>
+                    <li>Publikasi Aplikasi ke Google Play Store</li>
+                </ul>
+                <button id="continue-course-android-btn" class="continue-course bg-blue-600 text-white py-2 px-4 rounded">
+                    Lanjut Kursus
+                </button>
+            </div>
         </section>
         <h1 class="text-3xl font-bold mb-8">Pendaftaran Kursus</h1>
 
-        <!-- Pendaftaran -->
-        <section id="registration-form" class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">Formulir Pendaftaran Kursus</h2>
-            <form id="course-form" class="bg-white p-6 rounded shadow-md">
-                <div class="mb-4">
-                    <label for="kursus" class="block text-sm font-medium">Pilih Kursus:</label>
-                    <select id="kursus" name="kursus" onchange="updateBiaya()" class="mt-1 p-2 w-full border rounded">
-                        <option value="">-- Pilih Kursus --</option>
-                        <option value="komputer">Kursus Komputer</option>
-                        <option value="web">Kursus Web Programming</option>
-                        <option value="android">Kursus Android Studio</option>
-                    </select>
-                </div>
-                <div class="mb-4">
-                    <label for="biaya" class="block text-sm font-medium">Biaya Pendaftaran:</label>
-                    <input type="text" id="biaya" name="biaya" class="mt-1 p-2 w-full border rounded bg-gray-100 text-gray-700" readonly />
-                </div>
-                <div class="mb-4">
-                    <label for="full-name" class="block text-sm font-medium">Nama Lengkap</label>
-                    <input type="text" id="full-name" class="mt-1 p-2 w-full border rounded" />
-                </div>
-                <div class="mb-4">
-                    <label for="birthplace" class="block text-sm font-medium">Tempat Lahir</label>
-                    <input type="text" id="birthplace" class="mt-1 p-2 w-full border rounded" />
-                </div>
-                <div class="mb-4">
-                    <label for="birthdate" class="block text-sm font-medium">Tanggal Lahir</label>
-                    <input type="date" id="birthdate" class="mt-1 p-2 w-full border rounded" />
-                </div>
-                <div class="mb-4">
-                    <label for="mother-name" class="block text-sm font-medium">Nama Ibu</label>
-                    <input type="text" id="mother-name" class="mt-1 p-2 w-full border rounded" />
-                </div>
-                <div class="mb-4">
-                    <label for="father-name" class="block text-sm font-medium">Nama Ayah</label>
-                    <input type="text" id="father-name" class="mt-1 p-2 w-full border rounded" />
-                </div>
-                <div class="mb-4">
-                    <label for="education" class="block text-sm font-medium">Pendidikan</label>
-                    <select id="education" class="mt-1 p-2 w-full border rounded">
-                        <option value="">Pilih Pendidikan</option>
-                        <option value="SMA">SMA</option>
-                        <option value="Diploma">Diploma</option>
-                        <option value="Sarjana">Sarjana</option>
-                    </select>
-                </div>
-                <div class="mb-4">
-                    <label for="job" class="block text-sm font-medium">Pekerjaan</label>
-                    <select id="job" class="mt-1 p-2 w-full border rounded">
-                        <option value="">Pilih Pekerjaan</option>
-                        <option value="Pelajar">Pelajar</option>
-                        <option value="Pegawai">Pegawai</option>
-                        <option value="Wiraswasta">Wiraswasta</option>
-                    </select>
-                </div>
-                <div class="mb-4">
-                    <label for="phone" class="block text-sm font-medium">Nomor Telepon</label>
-                    <input type="tel" id="phone" class="mt-1 p-2 w-full border rounded" />
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-sm font-medium">Email</label>
-                    <input type="email" id="email" class="mt-1 p-2 w-full border rounded" />
-                </div>
-                <div class="mb-4">
-                    <label for="address" class="block text-sm font-medium">Alamat</label>
-                    <textarea id="address" class="mt-1 p-2 w-full border rounded"></textarea>
-                </div>
-                <div class="mb-4">
-                    <label for="payment-method" class="block text-sm font-medium">Pilihan Pembayaran</label>
-                    <select id="payment-method" class="mt-1 p-2 w-full border rounded">
-                        <option value="">Pilih Metode Pembayaran</option>
-                        <option value="GoPay">GoPay</option>
-                        <option value="LinkAja">LinkAja</option>
-                        <option value="PayPal">PayPal</option>
-                    </select>
-                </div>
-                <div class="flex justify-between">
-                    <button type="button" id="back-button" class="bg-gray-600 text-white py-2 px-4 rounded">
-                        Kembali
-                    </button>
-                    <button type="submit" id="submit-button" class="bg-green-600 text-white py-2 px-4 rounded" disabled>
-                        Bayar Sekarang
-                    </button>
-                </div>
-            </form>
-        </section>
+        <!-- Pendaftaran  -->
+        <section id="registration-form" class=" hidden min-h-screen flex items-center justify-center mb-8">
+            <div class="md:w-2/3 bg-white p-2 shadow-lg rounded-lg">
+                <h2 class="text-2xl font-bold mb-4">Formulir Pendaftaran Kursus</h2>
+                <form id="course-form" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="mb-4">
+                        <label for="kursus" class="block text-sm font-medium">Pilih Kursus:</label>
+                        <select id="kursus" name="kursus" onchange="updateBiaya()" class="mt-1 p-2 w-full border rounded">
+                            <option value="">-- Pilih Kursus --</option>
+                            <option value="komputer">Kursus Komputer</option>
+                            <option value="web">Kursus Web Programming</option>
+                            <option value="android">Kursus Android Studio</option>
+                        </select>
+                    </div>
 
-        <!-- Footer -->
-        <footer class="bg-gray-600 text-white py-4 mt-8 w-full">
-            <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-                <div class="text-center md:text-left mb-4 md:mb-0">
-                    <p>&copy; 2024 Imat Abu Kamal. All rights reserved.</p>
-                </div>
-                <div class="flex space-x-4">
-                    <a href="https://www.facebook.com" target="_blank" class="text-white">
-                        <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M22 12.1c0-5.5-4.5-10-10-10S2 6.6 2 12.1c0 5 3.7 9.1 8.5 9.9v-7H7.6v-2.9h2.9v-2.3c0-2.8 1.6-4.3 4.1-4.3 1.2 0 2.4.2 2.4.2v2.6h-1.3c-1.3 0-1.7 1-1.7 1.8v2.1h3l-.4 2.9h-2.6v7c4.8-.8 8.5-4.9 8.5-9.9z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank" class="text-white">
-                        <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M12 2.2c3.1 0 3.5 0 4.8.1 1.2.1 2 .3 2.5.5.7.3 1.2.7 1.7 1.2.5.5.9 1 .2 1.7.2.5.4 1.3.5 2.5.1 1.2.1 1.7.1 4.8s0 3.5-.1 4.8c-.1 1.2-.3 2-.5 2.5-.3.7-.7 1.2-1.2 1.7-.5.5-1 .9-1.7 1.2-.5.2-1.3.4-2.5.5-1.2.1-1.7.1-4.8.1s-3.5 0-4.8-.1c-1.2-.1-2-.3-2.5-.5-.7-.3-1.2-.7-1.7-1.2-.5-.5-.9-1-.2-1.7-.2-.5-.4-1.3-.5-2.5C2.3 15.5 2.2 15 2.2 12s0-3.5.1-4.8c.1-1.2.3-2 .5-2.5.3-.7.7-1.2 1.2-1.7.5-.5 1-.9 1.7-1.2.5-.2 1.3-.4 2.5-.5C8.5 2.2 8.9 2.2 12 2.2m0-2.2C8.8 0 8.3 0 7.1.1 5.8.2 4.7.4 3.9.7 3.2.9 2.5 1.2 1.9 1.8.9 2.7.3 3.8.1 4.9.1 6.2 0 6.7 0 12s0 5.8.1 7.1c.2 1.2.4 2.3.7 3.1.3.8.6 1.5 1.2 2.1.5.5 1.2.9 1.7 1.2.5.2 1.3.4 2.5.5 1.2.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.2-.1 2-.3 2.5-.5.7-.3 1.2-.7 1.7-1.2.5-.5.9-1 .2-1.7.2-.5.4-1.3.5-2.5.1-1.2.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.2-.3-2-.5-2.5-.3-.7-.7-1.2-1.2-1.7-.5-.5-1-.9-1.7-1.2-.5-.2-1.3-.4-2.5-.5C15.5 2.2 15 2.2 12 2.2z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.youtube.com" target="_blank" class="text-white">
-                        <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M19.6 3.2C18.3 2.6 12 2.6 12 2.6s-6.3 0-7.6.6c-1.4.6-2.3 1.7-2.5 3-.4 2.1-.5 6.5-.5 6.5s0 4.3.5 6.5c.2 1.3 1.1 2.4 2.5 3 1.4.6 7.6.6 7.6.6s6.3 0 7.6-.6c1.4-.6 2.3-1.7 2.5-3 .4-2.1.5-6.5.5-6.5s0-4.3-.5-6.5c-.2-1.3-1.1-2.4-2.5-3zm-8.6 10V7.5l5.5 2.8-5.5 2.9z" />
-                        </svg>
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=YourPhoneNumber" target="_blank" class="text-white">
-                        <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M20.5 3.5C18.8 1.8 16.5 1 14 1c-2.6 0-5 1-6.8 2.8C5.1 5.6 4 7.9 4 10.5c0 2.1.8 4 2.2 5.4L5 22l6.1-1.6c1.4.6 3 1 4.7 1 2.5 0 4.8-.8 6.5-2.5 3.6-3.5 3.6-9.2.2-12.5zm-8.5 16c-1.5 0-2.9-.4-4.2-1l-1.1.3.2-1.2c-.8-1.4-1.2-3.1-1.2-4.7 0-2.2.9-4.3 2.5-5.8C9.8 5.9 11.9 5 14 5c2.2 0 4.3.9 5.8 2.5 3 3.3 3 8.5-.2 11.5-1.5 1.4-3.5 2-5.6 2zm3.3-6.4c-.2-.1-1.2-.6-1.4-.7-.3-.1-.5-.1-.7.1-.2.2-.3.7-.5 1-.1.2-.3.2-.5.1-.2-.1-.9-.3-1.7-.9-.6-.5-1.1-1.2-1.2-1.4-.1-.2 0-.4.1-.5.1-.1.2-.2.3-.4.1-.1.1-.2.2-.3.1-.2 0-.3-.1-.4-.1-.1-.7-1.7-.9-2.4-.2-.6-.5-.5-.7-.5-.1 0-.3 0-.4 0s-.4.1-.6.4c-.2.2-.8.7-.8 1.7s.8 2 1 2.3c.1.1 1.5 2.3 3.7 3.2.5.2 1 .4 1.4.5.6.2 1.1.1 1.5.1.5-.1 1.4-.5 1.6-1.1.2-.6.2-1.1.1-1.3 0-.1-.2-.1-.4-.2z" />
-                        </svg>
-                    </a>
-                    <a href="mailto:your-email@example.com" class="text-white">
-                        <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M21 4H3C1.9 4 1 4.9 1 6v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H3V8l9 5.5 9-5.5v10zm-9-7L3 6h18l-9 5z" />
-                        </svg>
-                    </a>
-                </div>
+                    <div class="mb-4">
+                        <label for="biaya" class="block text-sm font-medium">Biaya Pendaftaran:</label>
+                        <input type="text" id="biaya" name="biaya" class="mt-1 p-2 w-full border rounded bg-gray-100 text-gray-700" readonly />
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="full-name" class="block text-sm font-medium">Nama Lengkap</label>
+                        <input type="text" id="full-name" class="mt-1 p-2 w-full border rounded" />
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="birthplace" class="block text-sm font-medium">Tempat Lahir</label>
+                        <input type="text" id="birthplace" class="mt-1 p-2 w-full border rounded" />
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="birthdate" class="block text-sm font-medium">Tanggal Lahir</label>
+                        <input type="date" id="birthdate" class="mt-1 p-2 w-full border rounded" />
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="mother-name" class="block text-sm font-medium">Nama Ibu</label>
+                        <input type="text" id="mother-name" class="mt-1 p-2 w-full border rounded" />
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="father-name" class="block text-sm font-medium">Nama Ayah</label>
+                        <input type="text" id="father-name" class="mt-1 p-2 w-full border rounded" />
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="education" class="block text-sm font-medium">Pendidikan</label>
+                        <select id="education" class="mt-1 p-2 w-full border rounded">
+                            <option value="">Pilih Pendidikan</option>
+                            <option value="SMA">SMA</option>
+                            <option value="Diploma">Diploma</option>
+                            <option value="Sarjana">Sarjana</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="job" class="block text-sm font-medium">Pekerjaan</label>
+                        <select id="job" class="mt-1 p-2 w-full border rounded">
+                            <option value="">Pilih Pekerjaan</option>
+                            <option value="Pelajar">Pelajar</option>
+                            <option value="Pegawai">Pegawai</option>
+                            <option value="Wiraswasta">Wiraswasta</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="phone" class="block text-sm font-medium">Nomor Telepon</label>
+                        <input type="tel" id="phone" class="mt-1 p-2 w-full border rounded" />
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium">Email</label>
+                        <input type="email" id="email" class="mt-1 p-2 w-full border rounded" />
+                    </div>
+
+                    <div class="md:col-span-2 mb-4">
+                        <label for="address" class="block text-sm font-medium">Alamat</label>
+                        <textarea id="address" class="mt-1 p-2 w-full border rounded"></textarea>
+                    </div>
+
+                    <div class="md:col-span-2 mb-4">
+                        <label for="payment-method" class="block text-sm font-medium">Pilihan Pembayaran</label>
+                        <select id="payment-method" class="mt-1 p-2 w-full border rounded">
+                            <option value="">Pilih Metode Pembayaran</option>
+                            <option value="GoPay">GoPay</option>
+                            <option value="LinkAja">LinkAja</option>
+                            <option value="PayPal">PayPal</option>
+                        </select>
+                    </div>
+
+                    <div class="md:col-span-2 flex justify-between">
+                        <button type="button" id="back-button" class="bg-gray-600 text-white py-2 px-4 rounded">
+                            Kembali
+                        </button>
+                        <button type="submit" id="submit-button" class="bg-green-600 text-white py-2 px-4 rounded" disabled>
+                            Bayar Sekarang
+                        </button>
+                    </div>
+                </form>
             </div>
-        </footer>
+        </section>
     </main>
-    <script src="../public/script.js"></script>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 text-blue-900 py-4 mt-8 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <p>&copy; 2024 Imat Abu Kamal. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-2">
+                <a href="https://www.facebook.com" target="_blank" class="text-blue-900">
+                    <i class="fab fa-facebook-f h-6 w-6"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="text-blue-900">
+                    <i class="fab fa-instagram h-6 w-6"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" class="text-blue-900">
+                    <i class="fab fa-youtube h-6 w-6"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=YourPhoneNumber" target="_blank" class="text-blue-900">
+                    <i class="fab fa-whatsapp h-6 w-6"></i>
+                </a>
+                <a href="mailto:your-email@example.com" class="text-blue-900">
+                    <i class="fas fa-envelope h-6 w-6"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
     <script>
-        function updateBiaya() {
-            var kursus = document.getElementById("kursus").value;
-            var biaya = document.getElementById("biaya");
-            if (kursus === "komputer") {
-                biaya.value = "Rp 1.800.000,00 (satu juta delapan ratus ribu rupiah)";
-            } else if (kursus === "web") {
-                biaya.value = "Rp 3.400.000,00 (tiga juta empat ratus ribu rupiah)";
-            } else if (kursus === "android") {
-                biaya.value =
-                    "Rp 4.478.000,00 (empat juta empat ratus tujuh puluh delapan ribu rupiah)";
-            } else {
-                biaya.value = "";
-            }
-        }
+        const scriptURL = "";
+        const form = document.forms["myForm"];
+        const resultElement = document.getElementById("result");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            fetch(scriptURL, {
+                    method: "POST",
+                    body: formData,
+                })
+                .then((response) => response.json())
+                .then((result) => {
+                    if (result.status === "sukses") {
+                        form.reset();
+                    }
+                    resultElement.textContent = result.pesan;
+                })
+                .catch((error) => console.error("Error!", error.message));
+        });
     </script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

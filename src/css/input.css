@@ -2,33 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.section {
-  display: none;
-}
-
-.section.active {
-  display: block;
-}
-
-.button-container {
-  margin-bottom: 20px;
-}
-
-button {
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-}
-
-.hidden {
-  display: none;
-}
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap");
+.@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap");
 
 img {
   object-fit: cover; /* Menjaga proporsi gambar */
   width: 100%; /* Menyebar secara horizontal */
-  height: auto; /* Tinggi mengikuti lebar untuk menjaga rasio */
+  height: 100vh; /* Tinggi mengikuti lebar untuk menjaga rasio */
 }
 
 .hidden {
@@ -40,7 +19,7 @@ img {
 }
 
 .carousel-item {
-  height: 75vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   transition: opacity 0.5s ease-in-out;
@@ -76,4 +55,51 @@ img {
   100% {
     transform: translateX(-100%);
   }
+}
+/* Ensuring footer stays at the bottom and main content doesn't get hidden behind the sidebar */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  margin-left: 15rem; /* Adjust according to your sidebar width */
+  padding-top: 5rem; /* Adjust according to your header height */
+  flex: 1;
+}
+footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+/* Aside */
+/* Pastikan elemen dropdown terlihat dengan baik */
+.group:hover .group-hover\:block {
+  display: block;
+}
+
+/* Teks dan ikon harus sejajar dengan baik */
+.flex.items-center {
+  align-items: center;
+}
+
+.mr-2 {
+  margin-right: 0.5rem; /* Memberikan jarak antara ikon dan teks */
+}
+
+.ml-auto {
+  margin-left: auto; /* Menggeser elemen panah ke kanan */
+}
+
+.transform.transition-transform.duration-200.group-hover\:rotate-90 {
+  transition: transform 0.2s;
+  transform: rotate(0deg);
+}
+
+.group:hover
+  .transform.transition-transform.duration-200.group-hover\:rotate-90 {
+  transform: rotate(90deg);
 }
